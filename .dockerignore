@@ -1,0 +1,14 @@
+// we ignore everything
+*
+
+// but then we un-ignore some things
+!package*.json
+!bin
+!index.js
+!config
+
+// we would like a possible version file too
+!version
+
+// oh - but we still ignore local config
+config/local.json

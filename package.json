@@ -1,0 +1,25 @@
+{
+  "name": "loki-alerter",
+  "version": "0.0.0",
+  "description": "Subscribes to streams on loki and posts alerts to alertmanager while being very configurable",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js | pino-pretty",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asbjørn Dyhrberg Thegler <asbjoern@deranged.dk>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "config": "^3.3.9",
+    "pino": "^8.14.1",
+    "smacker": "^1.0.5",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@tealink/eslint-plugin": "^3.0.0",
+    "eslint": "^8.44.0",
+    "nodemon": "^2.0.22",
+    "pino-pretty": "^10.0.1"
+  }
+}
