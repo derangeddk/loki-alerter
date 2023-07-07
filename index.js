@@ -22,7 +22,7 @@ const Service = function Service() {
                 const ws = new WebSocket(`ws://${config.lokiUrl}/loki/api/v1/tail?query=${query}&start=${epoch}`);
                 connections.push(ws);
 
-                ws.on('open', (...args) => log.info({ epoch, query, args }, 'Websocket opened'));
+                ws.on('open', (...args) => log.info({ epoch, query: alert.query, args }, 'Websocket opened'));
                 ws.on('close', (code, error) => log.info({ code, error: error.toString() }, 'Websocket closed'));
                 ws.on('error', (...args) => log.error({ args }, 'Websocket error'));
 
