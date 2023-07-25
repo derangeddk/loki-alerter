@@ -16,4 +16,4 @@ COPY --chown=node:node . .
 USER node
 ENV NODE_ENV=production
 
-CMD [ "bin/start" ]
+CMD [ "bin/start.js" ]
