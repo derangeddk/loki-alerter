@@ -1,6 +1,6 @@
 {
   "name": "loki-alerter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Subscribes to streams on loki and posts alerts to alertmanager while being very configurable",
   "main": "index.js",
   "scripts": {
